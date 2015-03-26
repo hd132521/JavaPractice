@@ -21,10 +21,13 @@ public class Condition {
 		case "그 외":
 			pay += 600; pay += (distance/10 + 1) * 200; break;
 		}
-		System.out.println("<<" + car + " 통행료 계산>>");
-		System.out.println("거리 : " + distance + "km");
-		System.out.println("차종 : " + car);
-		System.out.println("통행료 : " + pay + "원");
+		if(distance == 0) System.out.println("거리는 0일 수 없습니다");
+		else{
+			System.out.println("<<" + car + " 통행료 계산>>");
+			System.out.println("거리 : " + distance + "km");
+			System.out.println("차종 : " + car);
+			System.out.println("통행료 : " + pay + "원");
+		}
 		
 	}
 
