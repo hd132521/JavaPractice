@@ -15,11 +15,11 @@ public class Condition {
 		int pay = 0;
 		switch(car){
 		case "고속 버스":
-			pay += 850; pay += distance/10 * 300; break;
+			pay += 850; pay += (distance/10 + 1) * 300; break;
 		case "경차":
-			pay += 300; pay += distance/10 * 200; break;
+			pay += 300; pay += (distance/10 + 1) * 200; break;
 		case "그 외":
-			pay += 600; pay += distance/10 * 200; break;
+			pay += 600; pay += (distance/10 + 1) * 200; break;
 		}
 		System.out.println("<<" + car + " 통행료 계산>>");
 		System.out.println("거리 : " + distance + "km");
