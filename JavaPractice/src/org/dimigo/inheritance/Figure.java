@@ -22,6 +22,15 @@ public class Figure {
 		this.centerY = centerY;
 	}
 	
+	protected void printCenter(){
+		System.out.println("중심좌표 : (" + centerX + "," + centerY + ")");
+	}
+	
+	protected void moveFigure(int x, int y){
+		centerX += x;
+		centerY += y;
+	}
+	
 	protected double calcArea(){
 		return 0.0d;
 	}

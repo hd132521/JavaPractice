@@ -26,6 +26,23 @@ public class FigureTest {
 		System.out.println("원의 넓이 : " + String.format("%.1f", c.calcArea()));
 		System.out.println("삼각형의 넓이 : " + String.format("%.1f", t.calcArea()));
 		System.out.println("사각형의 넓이 : " + String.format("%.1f", r.calcArea()));
+		
+		System.out.println();
+		
+		c.printCenter();
+		t.printCenter();
+		r.printCenter();
+		
+		c.moveFigure(5, 5);
+		t.moveFigure(5, 5);
+		r.moveFigure(5, 5);
+		
+		System.out.println();
+		
+		c.printCenter();
+		t.printCenter();
+		r.printCenter();
+		
 	}
 
 }

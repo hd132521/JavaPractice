@@ -26,6 +26,11 @@ public class Circle extends Figure{
 		this.radius = radius;
 	}
 	
+	protected void printCenter(){
+		System.out.print("원 ");
+		super.printCenter();
+	}
+	
 	protected double calcArea(){
 		return radius * radius * Math.PI;
 	}
