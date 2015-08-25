@@ -36,12 +36,12 @@ public class SmartPhone {
 	public void pay(){
 		System.out.println("결제합니다.");
 	}
-	public void useSpecialFunction(SmartPhone phone){
-		if(phone instanceof Galaxy){
-			((Galaxy)phone).useWirelessCharging();
+	public void useSpecialFunction(){
+		if(this instanceof Galaxy){
+			((Galaxy)this).useWirelessCharging();
 		}
-		else if(phone instanceof IPhone){
-			((IPhone)phone).useAirDrop();
+		else if(this instanceof IPhone){
+			((IPhone)this).useAirDrop();
 		}
 	}
 	public String toString(){
