@@ -24,7 +24,7 @@ import java.net.Socket;
  */
 public class ServerThread3 implements Runnable {
   
-	// 클라이언트와의 통신을 위한 소켓
+	// 클라이언트와의 통신을 위한 소켓.
 	private Socket connectionSocket;
 	
 	private final static String DEFAULT_FILE_NAME = "index.html";

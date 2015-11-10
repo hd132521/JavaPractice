@@ -36,7 +36,7 @@ public class ServerThread implements Runnable {
 	    		new InputStreamReader(connectionSocket.getInputStream()));
 	    	PrintWriter out = new PrintWriter(connectionSocket.getOutputStream(), true)) {
 	    	
-	    	// 클라이언트로의 메시지 중 첫번째 줄을 읽어들인다.
+	    	// 클라이언트로의 메시지 중 첫번째 줄을 읽어들인다..
 	    	String request = in.readLine();
 	    	System.out.println("request message : " + request);
 	    	

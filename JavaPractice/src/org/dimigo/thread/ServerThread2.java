@@ -82,7 +82,7 @@ public class ServerThread2 implements Runnable {
 		    	
 		    	System.out.println("response : [" + response + "]");
 		    	
-		    	// 정상적으로 처리가 되었음을 나타내는 200 코드를 출력한다.
+		    	// 정상적으로 처리가 되었음을 나타내는 200 코드를 출력한다..
 		    	out.println("HTTP/1.1 200");
 		    	out.println("Content-type: text/html");
 		    	out.println("Content-length: " + response.length());
